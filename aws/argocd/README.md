@@ -1,7 +1,7 @@
 # AWS EKS Argo CD
 
 ## Overview
-This project deploys Argo CD on an AWS EKS cluster to provide a GitOps continuous delivery platform for Kubernetes applications. 
+This project deploys Argo CD on an AWS EKS cluster to provide a GitOps continuous delivery platform for Kubernetes applications.
 
 The deployment includes:
 - EKS cluster managed via Terraform
