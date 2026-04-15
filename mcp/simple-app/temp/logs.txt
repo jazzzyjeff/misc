@@ -1,0 +1,11 @@
+2026-04-13 10:15:23 INFO Starting application
+2026-04-13 10:15:24 INFO Connecting to database
+2026-04-13 10:15:25 ERROR Failed to connect to database
+2026-04-13 10:15:26 INFO Retrying connection
+2026-04-13 10:15:27 WARN Connection slow
+2026-04-13 10:15:28 ERROR Timeout while connecting to database
+2026-04-13 10:15:29 INFO Connection established
+2026-04-13 10:15:30 INFO Starting background jobs
+2026-04-13 10:15:31 ERROR Job scheduler failed to start
+2026-04-13 10:15:32 INFO Shutting down services
+2026-04-13 10:15:33 ERROR Unexpected shutdown error

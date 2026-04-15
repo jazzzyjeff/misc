@@ -26,6 +26,9 @@ Within this repository it will contain proof of concepts.
 - 🔹 Github Runner Keda Scaler [readme](/kubernetes/runners/github/README.md).
 - 🔹 Argo CD Generators [readme](/kubernetes/runners/github/README.md).
 
+**Model Context Protocol (MCP)**
+- 🔹 Simple app [readme](/mcp/simple-app/README.md).
+
 **Security**
 - 🔹 Container Scanning [readme](/security/container-scanning/README.md).
 - 🔹 Conftest [readme](/security/conftest/README.md).
