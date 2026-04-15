@@ -1,4 +1,4 @@
-# MCP Demo Server
+# Simple mcp app
 
 ## Overview
 
