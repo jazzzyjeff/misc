@@ -13,15 +13,17 @@ def add_numbers(a: int, b: int) -> int:
 
 @mcp.tool
 def read_file(path: str) -> str:
-    """Read a file from disk and return its content"""
-
-    with open(path, "r") as f:
-        return f.read()
+    """Read a file from disk and return its content."""
+    try:
+        with open(path, "r") as f:
+            return f.read()
+    except FileNotFoundError:
+        return f"File not found: {path}"
 
 
 @mcp.tool
 def search_in_file(path: str, keyword: str) -> list:
-    """Search for a keyword in a file and return matching lines."""
+    """Search for a keyword in a file (case-insensitive) and return matching lines."""
     results = []
     with open(path, "r") as f:
         for line in f:
@@ -45,6 +47,16 @@ def export_users_to_csv() -> str:
         writer.writerows(users)
 
     return path
+
+@mcp.tool
+def find_errors(path: str) -> list[str]:
+    """Find lines containing errors in a file."""
+    results = []
+    with open(path) as f:
+        for line in f:
+            if "error" in line.lower():
+                results.append(line.strip())
+    return results
 
 if __name__ == "__main__":
     mcp.run()
