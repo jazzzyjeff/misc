@@ -1,3 +1,5 @@
+import csv
+
 from fastmcp import FastMCP
 
 mcp = FastMCP("fastmcp-demo")
@@ -27,6 +29,22 @@ def search_in_file(path: str, keyword: str) -> list:
                 results.append(line.strip())
     return results
 
+@mcp.tool
+def export_users_to_csv() -> str:
+    """Export demo users to a CSV file and return file path."""
+    users = [
+        {"name": "Alice", "age": 30},
+        {"name": "Bob", "age": 25},
+    ]
+
+    path = "/tmp/users.csv"
+
+    with open(path, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=["name", "age"])
+        writer.writeheader()
+        writer.writerows(users)
+
+    return path
 
 if __name__ == "__main__":
     mcp.run()
