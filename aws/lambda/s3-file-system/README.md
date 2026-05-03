@@ -27,6 +27,8 @@ The function supports five test actions to exercise the mount:
 ## Usage
 
 ```bash
+cd aws/lambda/s3-file-system/terraform
+
 cp variables.auto.tfvars.tmpl variables.auto.tfvars
 # edit variables.auto.tfvars with your region etc.
 
