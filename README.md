@@ -11,7 +11,7 @@ Within this repository it will contain proof of concepts.
 - 🔹 AWS Lambda Ansible [readme](/aws/lambda/ansible/README.md).
 - 🔹 GitHub OpenID Connect AWS [readme](/aws/iam/oidc/github/README.md).
 - 🔹 AWS EKS Argo CD [readme](/aws/argocd/README.md).
-- 🔹 AWS Lambda S3 File Sytem [readme](/aws/lambda/s3-file-system/README.MD).
+- 🔹 AWS Lambda S3 File Sytem [readme](/aws/lambda/s3-file-system/README.md).
 
 **ChatOps**
 - 🔹 Discord [readme](/chat-ops/discord/README.md).
