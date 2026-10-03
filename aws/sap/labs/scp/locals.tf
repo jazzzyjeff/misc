@@ -9,6 +9,7 @@ locals {
           sid    = "DenyAllOutsideRequestedRegions"
           effect = "Deny"
           not_actions = [
+            "aws-marketplace:*",
             "cloudfront:*",
             "iam:*",
             "organizations:*",
